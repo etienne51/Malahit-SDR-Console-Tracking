@@ -6,7 +6,7 @@ by syncing the frequency of OmniRig RIG2 (Malahit via USB) with RIG1 (SDR Consol
 This method is valid at the current date (nov. 2023), with SDR Console version 3.3 beta build 3131.
 Future updates might include built-it support for the Malahit SDR, rendering this trick obsolete.
 
-The idea behind this trick is that, while the normal CAT control of SDR Console tracks any change in tuned frequency,
+# The idea behind this trick is that, while the normal CAT control of SDR Console tracks any change in tuned frequency,
 the 'CW Skimmer' option on the other hand provides another CAT control that only tracks changes in center frequency.
 The Malahit needs to stay fixed on the center frequency used by SDR Console, so the software can allow the user
 to independently tune to any signal in the visible spectrum, without the Malahit jumping to that tuned frequency.
@@ -15,7 +15,7 @@ The Malahit needs to only change its frequency in sync with any change of center
 Note that you won't be able to use the CW Skimmer software alongside this trick,
 as changing frequency in CW Skimmer will make the Malahit follow, which is unwanted here.
 
-To configure everything, first make sure the Malahit is plugged in via USB and drivers are installed properly.
+# To configure everything, first make sure the Malahit is plugged in via USB and drivers are installed properly.
 
 In SDR Console, go to the radio definitions, click on the 'Search' button, under the 'SoftRock' entry click on 'XTAL'.
 Enter any frequency you want (I used 1MHz), as this will not matter with what we are doing here.
@@ -26,7 +26,7 @@ If the spectrum is too high or low, go under the 'View' tab, and adjust the 'Sca
 
 With SDR Console now operational, go to the 'View' tab, and click on 'Select' under 'More options...'.
 You will see 'CW Skimmer' in the list, tick the checkbox to enable it, validate and restart SDR Console as requested.
-#
+
 Now go back to the 'View' tab, and click on 'CW Skimmer' under 'More options...' to the far right,
 assuming you already have a virtual serial port software installed and configured (I used VSP Manager),
 select the serial port you want to use and tick the checkbox next to it.
