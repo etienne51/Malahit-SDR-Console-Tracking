@@ -7,6 +7,7 @@ This method is valid at the current date (nov. 2023), with SDR Console version 3
 Future updates might include built-it support for the Malahit SDR, rendering this trick obsolete.
 
 #
+
 The idea behind this trick is that, while the normal CAT control of SDR Console tracks any change in tuned frequency,
 the 'CW Skimmer' option on the other hand provides another CAT control that only tracks changes in center frequency.
 The Malahit needs to stay fixed on the center frequency used by SDR Console, so the software can allow the user
@@ -17,6 +18,7 @@ Note that you won't be able to use the CW Skimmer software alongside this trick,
 as changing frequency in CW Skimmer will make the Malahit follow, which is unwanted here.
 
 #
+
 To configure everything, first make sure the Malahit is plugged in via USB and drivers are installed properly.
 
 In SDR Console, go to the radio definitions, click on the 'Search' button, under the 'SoftRock' entry click on 'XTAL'.
