@@ -65,4 +65,11 @@ Here are the settings I used for the Malahit SDR:
 - Poll int., ms:  500
 - Timeout, ms:  4000
 
-Everything should now be configured properly, and this program should be ready to be launched.
+Everything should now be configured properly.
+
+To run this program, you need to have Python installed on your system (I used Python 3.8.0).
+This script requires the installation of the package 'pywin32', so open a terminal window (cmd),
+and run the following command: 
+  python -m pip install pywin32
+
+After the installation is completed, you should now be ready to run this program!
