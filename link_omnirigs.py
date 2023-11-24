@@ -90,10 +90,9 @@ if rig1.FreqA == rig2.FreqA:
     print(f"Frequencies already in sync at  >  {rig1.FreqA:,}".replace(',', '.'), end="\n\n")
 
 newfreq = None
-loop = True
 
-while loop:
-    try:
+try:
+    while True:
         if rig1.FreqA != rig2.FreqA and newfreq != rig1.FreqA:
             print(f"Syncing frequency to  >  {rig1.FreqA:,}".replace(',', '.'), end="\n\n")
             
@@ -101,8 +100,8 @@ while loop:
             rig2.FreqA = rig1.FreqA
         
         time.sleep(0.1)
-    
-    except KeyboardInterrupt:
-        loop = False
+
+except KeyboardInterrupt:
+    pass
 
 print("Program ended", end="\n\n")
